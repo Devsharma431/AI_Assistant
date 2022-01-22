@@ -121,6 +121,7 @@ if __name__ == '__main__':
         elif "open my story in instagram" in query:
             speak("opening your story")
             webbrowser.open("https://www.instagram.com/stories/highlights/17852566802067812/")
+            
 
 
 
@@ -132,9 +133,8 @@ if __name__ == '__main__':
             s = ctime()
             speak(s)
             print(s)
-
-
-
+        elif "Open my github" or "open github" in query:
+            webbrower.open("https://github.com/")
 
         elif 'open stackoverflow' in query:
             speak("Here you go to Stack Over flow.Happy coding")
@@ -401,15 +401,6 @@ if __name__ == '__main__':
         elif "sleep" in query:
 
             time.sleep()
-
-
-
-
-
-
-
-
-
         elif "log off" in query or "sign out" in query:
             speak("Make sure all the application are closed before sign-out")
             time.sleep(5)
@@ -523,10 +514,13 @@ Namespaces are one honking great idea -- let's do more of those!"""
             results = wikipedia.summary(query, sentences=3)
             print(results)
             speak(results)
+            
 
 
 
-
+        elif " Hows your day" in query:
+            speak("Its matter to you sir Is your day is good sir")
+           
         elif "i love you" in query:
             speak("It's hard to understand")
         elif "what is your name" in query:
