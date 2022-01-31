@@ -128,6 +128,8 @@ if __name__ == '__main__':
         elif "open instagram"  in query:
             speak("opening instagram")
             webbrowser.open("https://www.instagram.com/")
+        elif "tell me something about your owner" in query:
+            speak("MY owner name is Dev sharma He is a kind hearted person . Plz contribute in our github Thank you")
 
         elif "time" in query:
             s = ctime()
